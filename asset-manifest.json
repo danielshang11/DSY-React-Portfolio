@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/DSY-React-Portfolio/static/css/main.49d9986d.css",
+    "main.js": "/DSY-React-Portfolio/static/js/main.eb4e75f5.js",
+    "static/media/food-and-news.jpg": "/DSY-React-Portfolio/static/media/food-and-news.5aac64accced4cc76fdd.jpg",
+    "static/media/BookHub.jpg": "/DSY-React-Portfolio/static/media/BookHub.224b0e29adf29840558e.jpg",
+    "static/media/Weather-Dashboard.jpg": "/DSY-React-Portfolio/static/media/Weather-Dashboard.7113bb8fb7b19ce69e3b.jpg",
+    "static/media/Work-Day-Scheduler.jpg": "/DSY-React-Portfolio/static/media/Work-Day-Scheduler.6020778eabad1f4ec95c.jpg",
+    "static/media/beams.jpg": "/DSY-React-Portfolio/static/media/beams.cad9520f894ca61faf68.jpg",
+    "index.html": "/DSY-React-Portfolio/index.html",
+    "main.49d9986d.css.map": "/DSY-React-Portfolio/static/css/main.49d9986d.css.map",
+    "main.eb4e75f5.js.map": "/DSY-React-Portfolio/static/js/main.eb4e75f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49d9986d.css",
+    "static/js/main.eb4e75f5.js"
+  ]
+}
