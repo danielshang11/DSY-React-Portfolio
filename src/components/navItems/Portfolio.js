@@ -31,7 +31,7 @@ function Portfolio() {
     },
 
   ]);
-  
+
   return (
     <div>
       <div className="flex flex-col">
@@ -44,7 +44,6 @@ function Portfolio() {
       </div>
     </div>
   );
-  
 };
 
 export default Portfolio;

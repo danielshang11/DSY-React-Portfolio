@@ -21,7 +21,6 @@ function Project({ project }) {
       </div>
     </div>
   );
-  
 }
 
 export default Project;
