@@ -1,16 +1,17 @@
 import React from 'react';
+import daniel from '../../assets/Daniel.jpg';
 
 function About() {
   return (
     
     <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16">
-    <div className="px-6">
+    <div className="px-2">
       <div className="flex flex-wrap justify-center">
-        <div className="w-full px-4 flex justify-center">
+        <div className="w-full px-1 flex justify-center">
           <div className="relative">
             <img
-              alt="..."
-              src="../../assets/img/Daniel"
+              alt="daniel"
+              src={daniel}
               className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
             />
           </div>

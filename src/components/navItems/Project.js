@@ -11,7 +11,7 @@ function Project({ project }) {
         
         <div className="project-text">
           <h3>
-            <img className=" h-24 w-48 "src={require(`../../assets/projects/${name}.jpg`).default} href={link} alt={name}/>
+            <img className=" h-24 w-48 "src={require(`../../assets/projects/${name}.jpg`)} href={link} alt={name}/>
             <a href={repo}>
               <i className="fab fa-github">{name}</i>
             </a>
@@ -21,6 +21,7 @@ function Project({ project }) {
       </div>
     </div>
   );
+  
 }
 
 export default Project;
