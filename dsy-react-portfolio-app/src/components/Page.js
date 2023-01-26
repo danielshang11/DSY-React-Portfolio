@@ -3,6 +3,7 @@ import About from './navItems/About';
 import Portfolio from './navItems/Portfolio.js';
 import Contact from './navItems/Contacts.js';
 import Resume from './navItems/Resume.js';
+import Home from './navItems/Home'
 
 
 const PageContent = (props) => {
@@ -18,6 +19,8 @@ function Page({ currentPage }) {
 
   const renderPage = () => {
     switch (currentPage.name) {
+      case 'Home':
+        return <Home />;
       case 'About':
         return <About />;
       case 'Portfolio':
@@ -27,7 +30,7 @@ function Page({ currentPage }) {
       case 'Resume':
         return <Resume />;
       default:
-        return <About />;
+        return <Home />;
     }
   };
 

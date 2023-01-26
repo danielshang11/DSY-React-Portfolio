@@ -54,11 +54,11 @@ function Contact() {
                 <img
                   src="https://cdn.stocksnap.io/img-thumbs/960w/books-market_UVRPTGPNJ2.jpg"
                   className="w-full"
-                  alt="Sample image"
+                  alt="Sample"
                 />
               </div>
               <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
-                <form id='login-form' className='auth-form'>
+                <form id='contact-form' className='' onSubmit={handleSubmit}>
                   <div className="input-wrapper">
                     <div>
                       <label htmlFor="email">Email address:</label>

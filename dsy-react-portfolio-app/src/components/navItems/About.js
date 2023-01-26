@@ -2,19 +2,61 @@ import React from 'react';
 
 function About() {
   return (
-    <section className="container mx-auto px-2 mt-4 md:mt-10 ">
-      <div className="flex flex-row container mx-auto w-full px-4 lg:w-5/12 ">
-        <div className="w-full px-4 lg:w-5/12">
-        {/* <i className="fas fa-user-circle leading-snug" style={{ fontSize: "96px" }}></i> */}
+    
+    <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16">
+    <div className="px-6">
+      <div className="flex flex-wrap justify-center">
+        <div className="w-full px-4 flex justify-center">
+          <div className="relative">
+            <img
+              alt="..."
+              src="../../assets/img/Daniel"
+              className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
+            />
+          </div>
         </div>
-        <p className='text-body-color max-w-[480px] text-base'>
-        Yes. As title, my name is Daniel. I graduated from a university in Taiwan, my major is digital design, Adobe is my best friend. Very good at AI,PS, and front-end design.
-        Also I am a self-motivated person who is willing to learn anything I am interested.
-        </p>
-        <img className='text-body-color max-w-[480px]' src="https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/314390557_2066107440241091_9162424769371632474_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=wXA-yDbmBrIAX9n3iug&_nc_ht=scontent-lax3-2.xx&oh=00_AfDW2xotCAedzFLqpZDGflq2rVwfJppjdWDzkGcvrbsWNg&oe=63D6B2A5" alt="wooden background"></img>
+        <div className="w-full px-4 text-center mt-20">
+          <div className="flex justify-center py-4 lg:pt-4 pt-8">
+            <div className="mr-4 p-3 text-center">
+              <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
+                4
+              </span>
+              <span className="text-sm text-blueGray-400">Project</span>
+            </div>
+          </div>
+        </div>
       </div>
-      
-    </section>
+      <div className="text-center mt-12">
+        <h3 className="text-xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
+          Daniel
+        </h3>
+        <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
+          <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>{" "}
+          Irvine, California
+        </div>
+        <div className="mb-2 text-blueGray-600 mt-10">
+          <i className="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>
+          Ready for Work
+        </div>
+        <div className="mb-2 text-blueGray-600">
+          <i className="fas fa-university mr-2 text-lg text-blueGray-400"></i>
+          Full Stack Development BootCamp In UCI
+        </div>
+      </div>
+      <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
+        <div className="flex flex-wrap justify-center">
+          <div className="w-full lg:w-9/12 px-4">
+            <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
+            A Shy Boy as you see.<br />
+            Yes. As title, my name is Daniel. I graduated from a university in Taiwan, my major is digital design, Adobe is my best friend. Very good at AI,PS, and front-end design.
+            Also I am a self-motivated person who is willing to learn anything I am interested.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   );
 }
 

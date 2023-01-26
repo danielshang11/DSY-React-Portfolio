@@ -7,8 +7,10 @@ import Footer from './components/Footer.js';
 import Page from './components/Page'
 
 
+
 function App() {
   const [pages] = useState([
+    { name: 'Home'},
     { name: 'About'},
     { name: 'Portfolio'},
     { name:'Contact'},

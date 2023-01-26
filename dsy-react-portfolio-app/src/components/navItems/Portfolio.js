@@ -6,44 +6,39 @@ function Portfolio() {
   // Replace links with deployed projects and GitHub repos
   const [projects] = useState([
     {
-      name: 'Book Hub',
+      name: 'BookHub',
       description: 'Node.js,Express.js, Handlebars, TailwindCSS',
       link: "https://book-hub.herokuapp.com/",
       repo: "https://github.com/DariusGarcia/bookhub"
     },
     {
-      name: 'pastel-puzzels',
-      description: 'MERN Stack',
-      link: "https://github.com",
-      repo: "https://github.com"
+      name: 'food-and-news',
+      description: 'JavaScript, Tailwind CSS, HTML5',
+      link: "https://dariusgarcia.github.io/food-and-news/",
+      repo: "https://github.com/DariusGarcia/food-and-news"
     },
     {
-      name: 'run-buddy',
-      description: 'HTML/CSS',
-      link: "https://github.com",
-      repo: "https://github.com"
+      name: 'Work-Day-Scheduler',
+      description: 'HTML/CSS/JavaScript',
+      link: "https://danielshang11.github.io/Work-Day-Scheduler/",
+      repo: "https://github.com/danielshang11/Work-Day-Scheduler"
     },
     {
-      name: 'led-wall',
-      description: 'Node/IoT',
-      link: "https://github.com",
-      repo: "https://github.com"
+      name: 'Weather-Dashboard',
+      description: 'HTML/CSS/JavaScript',
+      link: "https://danielshang11.github.io/DSY-Weather-Dashboard/",
+      repo: "https://github.com/danielshang11/DSY-Weather-Dashboard"
     },
-    {
-      name: 'calculator',
-      description: 'React/JavaScript/CSS',
-      link: "https://github.com",
-      repo: "https://github.com"
-    },
+
   ]);
 
   return (
     <div>
       <div className="flex flex-col">
-        {projects.map((project, idx) => (
+        {projects.map((project, i) => (
           <Project
             project={project}
-            key={"project" + idx}
+            key={"project" + i}
           />
         ))}
       </div>
