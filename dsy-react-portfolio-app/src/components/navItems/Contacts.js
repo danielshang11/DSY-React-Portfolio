@@ -41,43 +41,84 @@ function Contact() {
   };
 
   return (
-    <section>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            defaultValue={name}
-            onBlur={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input
-            type="email"
-            name="email"
-            defaultValue={email}
-            onBlur={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            name="message"
-            rows="5"
-            defaultValue={message}
-            onBlur={handleChange}
-          />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
+    <div className='mt-24 h-full login-card container'>
+  
+        <section className="h-screen input-wrapper">
+          <div className="px-6 text-gray-800">
+            <div
+              className="flex xl:justify-center lg:justify-between justify-center items-center flex-wrap h-full g-6"
+            >
+              <div
+                className="grow-0 shrink-1 md:shrink-0 basis-auto xl:w-6/12 lg:w-6/12 md:w-9/12 mb-12 md:mb-0"
+              >
+                <img
+                  src="https://cdn.stocksnap.io/img-thumbs/960w/books-market_UVRPTGPNJ2.jpg"
+                  className="w-full"
+                  alt="Sample image"
+                />
+              </div>
+              <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
+                <form id='login-form' className='auth-form'>
+                  <div className="input-wrapper">
+                    <div>
+                      <label htmlFor="email">Email address:</label>
+                      <input
+                        className='auth-input-fields form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
+                        type="email"
+                        name="email"
+                        placeholder="email"
+                        defaultValue={email}
+                        onBlur={handleChange}
+                      />
+                    </div>
+                  </div>
+                  <div className="input-wrapper">
+                    <div>
+                      <label htmlFor="name">User Name:</label>
+                      <input
+                        className='auth-input-fields form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
+                        type="text"
+                        name="name"
+                        placeholder="username"
+                        defaultValue={name}
+                        onBlur={handleChange}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="input-wrapper">
+                    <div>
+                      <label htmlFor="message">Message:</label>
+                      <textarea
+                        className='auth-input-fields form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
+                        name="message"
+                        rows="5"
+                        defaultValue={message}
+                        onBlur={handleChange}
+                      />
+                    </div>
+                  </div>
+                  {errorMessage && (
+                    <div>
+                      <p className="error-text">{errorMessage}</p>
+                    </div>
+                  )}
+
+                  <div className="text-center lg:text-left">
+                    <button
+                      type="submit"
+                      className="auth-btn inline-block px-7 py-3 bg-gray-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gray-700 hover:shadow-lg focus:bg-gray-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-800 active:shadow-lg transition duration-150 ease-in-out"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-        )}
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+      </section>
+    </div>
+
   );
 }
 

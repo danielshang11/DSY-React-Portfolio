@@ -6,11 +6,12 @@ import Nav from './components/Navbar.js';
 import Footer from './components/Footer.js';
 import Page from './components/Page'
 
+
 function App() {
   const [pages] = useState([
-    { name: 'About Me'},
+    { name: 'About'},
     { name: 'Portfolio'},
-    { name:'Contact Me'},
+    { name:'Contact'},
     { name:'Resume'}
   ]);
 

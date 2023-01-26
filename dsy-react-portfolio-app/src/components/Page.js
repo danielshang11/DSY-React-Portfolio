@@ -18,11 +18,11 @@ function Page({ currentPage }) {
 
   const renderPage = () => {
     switch (currentPage.name) {
-      case 'About Me':
+      case 'About':
         return <About />;
       case 'Portfolio':
         return <Portfolio />;
-      case 'Contact Me':
+      case 'Contact':
         return <Contact />;
       case 'Resume':
         return <Resume />;

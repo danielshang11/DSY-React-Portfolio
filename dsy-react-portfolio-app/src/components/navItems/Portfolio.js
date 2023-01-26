@@ -6,10 +6,10 @@ function Portfolio() {
   // Replace links with deployed projects and GitHub repos
   const [projects] = useState([
     {
-      name: 'surf-report',
-      description: 'MERN Stack',
-      link: "https://github.com",
-      repo: "https://github.com"
+      name: 'Book Hub',
+      description: 'Node.js,Express.js, Handlebars, TailwindCSS',
+      link: "https://book-hub.herokuapp.com/",
+      repo: "https://github.com/DariusGarcia/bookhub"
     },
     {
       name: 'pastel-puzzels',
@@ -39,7 +39,7 @@ function Portfolio() {
 
   return (
     <div>
-      <div className="flex-row">
+      <div className="flex flex-col">
         {projects.map((project, idx) => (
           <Project
             project={project}
